@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "UTF-8">
+<title>Arizona State University student website</title>
+<link rel = "stylesheet"
+	type = "text/css"
+	href = "myStyle.css" />
+</head>
+<body>
+
+
+
+
+<div class="slideshow-image-content">
+<br><br>
+<!-- Slideshow container -->
+<div class="slideshow-container" style="width:100%">
+
+  <div>
+    <div class="arizona-image"></div>
+  </div>
+
+</div>
+<br><br>
+</div>
+
+
+<div class="menu">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li style="float:right"><a class="active" href="about.html">About</a></li>
+    <li style="float:right"><a class="active" href="references.html">References</a></li>
+  </ul>
+</div>
+
+<p>
+&ensp;My name is Steven Pazur, and I am applying for the Tech Nation visa.
+<br><br>
+&ensp;I made this website to post it on my GitHub account.  The words and images come from various sources, but I want 
+to show that I am capable of making a great website.  I made a better site back when I was in college, but the records were lost 
+so I composed this one from complete scratch.
+<br><br>
+&ensp;In that light, I have decided not to publish this website because it contains content I copied and pasted from various travel websites.  
+I only wanted to put this together quickly.
+<br><br>
+&ensp;The only reason for this site is to demonstrate my skills of web design and coding.
+</p>
+
+<footer>
+Posted by: Steven Pazur Ltd.<br>
+Email: <a href="mailto:sjpazur@yahoo.com">
+sjpazur@yahoo.com</a>.<br>
+Mobile: <a href="tel:708-686-1444">708-686-1444</a><br>
+</footer>
+<br>
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);
+}
+
+
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+</script>
+</body>
+</html>
